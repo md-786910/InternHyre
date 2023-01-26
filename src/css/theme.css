@@ -10878,9 +10878,7 @@ a:hover {
   height: 100%;
   left: 0;
   top: 0;
-  background: #8b37ff
-    url("E:\Web Devlopment\INTERNSHIP PROVIDER WEBSITE BUILIDING REQUIREMENT\internship\web-app\public\assets\images\section-bg.jpg")
-    no-repeat center center;
+  background: #8b37ff url("./hero-bg.jpg") no-repeat center center;
   background-size: cover;
   -webkit-opacity: 0.08;
   -moz-opacity: 0.08;
@@ -10999,9 +10997,7 @@ a:hover {
   height: 100%;
   left: 0;
   top: 0;
-  background: #8b37ff
-    url("E:\Web Devlopment\INTERNSHIP PROVIDER WEBSITE BUILIDING REQUIREMENT\internship\web-app\public\assets\images\section-bg-alt.jpg")
-    no-repeat center center;
+  background: #8b37ff url("./hero-bg.jpg") no-repeat center center;
   background-size: cover;
   -webkit-opacity: 0.08;
   -moz-opacity: 0.08;
