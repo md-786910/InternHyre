@@ -10663,8 +10663,7 @@ a:hover {
 }
 .hero-section {
   position: relative;
-  background: url("E:\Web Devlopment\INTERNSHIP PROVIDER WEBSITE BUILIDING REQUIREMENT\internship\web-app\public\assets\images\hero-bg.jpg")
-    no-repeat center center;
+  background: url("./hero-bg.jpg") no-repeat center center;
   background-size: cover;
   min-height: 400px;
   color: #fff;
