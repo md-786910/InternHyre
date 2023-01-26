@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>{page_title}</title>
+</head>
+<body>
+
+  <iframe src="https://player.vimeo.com/video/{video_id}?h={hash_parameter}" width="{video_width}" height="{video_height}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+  <script src="{url}"></script>
+  <script>
+    var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
+
+    player.on('play', function() {
+      console.log('Played the video');
+    });
+
+    player.getVideoTitle().then(function(title) {
+      console.log('title:', title);
+    });
+  </script>
+
+</body>
+</html>
+
+
+  // <Player
+      //   poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLMl4_ScwHun3sWMAmlDsshDOzMCpJIWXsXQ&usqp=CAU"
+      //   autoPlay={true}
+      // >
+      //   <source src={video2} />
+      //   <ControlBar>
+      //     <ReplayControl seconds={10} order={1.1} />
+      //     <ForwardControl seconds={30} order={1.2} />
+      //     <CurrentTimeDisplay order={4.1} />
+      //     <TimeDivider order={4.2} />
+      //     <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} order={7.1} />
+      //     <VolumeMenuButton />
+      //   </ControlBar>
+      //   <LoadingSpinner />
+      // </Player>
+
+
+      let d = 227;
+var i = setInterval(function() {
+
+		var minutes = parseInt(d / 60, 10);
+		var seconds = d % 60;
+        console.log(minutes)
+        console.log(seconds)
+		// (Put the minutes and seconds in the display)
+
+		clearInterval(i);
+	
+}, 200);
