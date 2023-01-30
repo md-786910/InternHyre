@@ -11,12 +11,27 @@ function AboutContent() {
                 About Us
               </h6>
               <h1 className="mb-4">Welcome to Internhyre</h1>
-              <p className="mb-4">
-                Internhyre is a internship provider website that connects people
-                with qualified career experts to provide high-quality and timely
-                information.
+              <p
+                className="mb-4"
+                style={{
+                  wordSpacing: "1px",
+                  lineHeight: "1.7em",
+                  color: "black",
+                  fontSize: "18px",
+                }}
+              >
+                <strong>Internhyre</strong> is a internship provider website
+                that connects people with qualified career experts to provide
+                high-quality and timely information.
               </p>
-              <p className="mb-4 space-left2">
+              <p
+                className="mb-4 space-left2 "
+                style={{
+                  wordSpacing: "1px",
+                  lineHeight: "1.7em",
+                  color: "black",
+                }}
+              >
                 Internhyre is a internship provider website that connects people
                 with qualified career experts to provide high-quality and timely
                 information, guidance, and support to professional organizations
@@ -32,21 +47,13 @@ function AboutContent() {
                 more about internship training offers , see the list of
                 internship training programs linked below. Need a referral?
                 Click here to go to a website on the subject Want to work on a
-                project you are passionate about?
-                <a href=" http://skillydetube.appspot.com">
-                  {" "}
-                  http://skillydetube.appspot.com
-                </a>{" "}
-                Want to attend a project you &nbsp;
-                <a href="http://skills-in-training.org">
-                  http://skills-in-training.org
-                </a>{" "}
-                If you cannot attend this project, and want to fill out an
-                application , ask this applicator to apply. Looking for a job,
-                volunteer, or group? What would happen if you received a call
-                from your employer: I want to work for a non-profit! That would
-                be awesome! I'm also thinking of being in charge of your agency!
-                I want.
+                project you are passionate about? Want to attend a project you
+                &nbsp; If you cannot attend this project, and want to fill out
+                an application , ask this applicator to apply. Looking for a
+                job, volunteer, or group? What would happen if you received a
+                call from your employer: I want to work for a non-profit! That
+                would be awesome! I'm also thinking of being in charge of your
+                agency! I want.
               </p>
             </div>
           </div>

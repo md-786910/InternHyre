@@ -1,22 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import Model from "../common/Model";
 import UserCourses from "./UserCourses";
 import UserProfile from "./UserProfile";
 
 function Profile() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
+      <Model
+        show={show}
+        handleShow={handleShow}
+        handleClose={handleClose}
+        heading={"share certificate"}
+        disableRegister={false}
+      >
+        <h2>Add Link to share</h2>
+      </Model>
       <div
         className="container mt-5 d-flex "
         style={{ backgroundColor: "light" }}
       >
         <div
-          className="nav  flex-column nav-pills me-5"
+          className="shadow  px-5 pe-5 nav flex-column nav-pills me-5"
           id="v-pills-tab"
           role="tablist"
           aria-orientation="vertical"
         >
           <button
-            className="nav-link active mb-4 "
+            className="nav-link  active mb-4 "
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -65,7 +79,7 @@ function Profile() {
           </button>
         </div>
         <div
-          className="tab-content bg-dark p-3 w-100 "
+          className="tab-content shadow p-3 w-100 "
           id="v-pills-tabContent"
           style={{ borderRadius: "5px" }}
         >
@@ -91,16 +105,18 @@ function Profile() {
             role="tabpanel"
             aria-labelledby="v-pills-messages-tab"
           >
-            <div className="certificate mx-3">
-              <img
-                src="https://templates.designwizard.com/799d5470-04d1-11e8-af59-3146f00748dd.jpg"
-                alt=""
-              />
+            <div
+              className="certificate mx-3 woow fadeIn "
+              data-wow-delay="0.1s"
+            >
+              <div className="certificate">
+                <img src="./assets/images/cert.jpg" alt="" />
+              </div>
               <div className="downloadBtn mt-4">
                 <button className="btn btn-primary">
                   Download Certificate
                 </button>
-                <button className="btn mx-3 btn-success">
+                <button className="btn mx-3 btn-success" onClick={handleShow}>
                   Share Certificate
                 </button>
               </div>

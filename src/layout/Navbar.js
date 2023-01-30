@@ -10,6 +10,7 @@ function Navbar() {
         >
           <h2 className="m-0 text-primary">
             <i className="fa fa-book me-3"></i>
+            <i class="fa-solid fa-map-location-dot"></i>
             <strong>InternHyre</strong>
           </h2>
         </NavLink>
@@ -47,20 +48,34 @@ function Navbar() {
             </NavLink>
           </div>
 
-          <div class="dropdown me-3">
-            <button
-              class="btn btn-primary dropdown-toggle"
+          {/*
+           <button
+              className="btn btn-primary dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
             >
-              user profile
-              <span class="caret"></span>
             </button>
-            <div class="dropdown-menu me-3">
-              <Link to="/profile" class="dropdown-item">
+
+        */}
+          <div
+            className="ms-auto dropdown me-3"
+            style={{
+              textAlign: "right",
+            }}
+          >
+            <div type="button" data-bs-toggle="dropdown">
+              {" "}
+              <img
+                src={"./assets/images/user.jpg"}
+                alt="user"
+                className="border border-4 rounded-circle w-25 dropdown-toggle"
+              />
+            </div>
+            <div className="dropdown-menu text-right">
+              <Link to="/profile" className="dropdown-item">
                 Profile
               </Link>
-              <Link to="/logout" class="dropdown-item">
+              <Link to="/logout" className="dropdown-item">
                 Logout
               </Link>
             </div>
