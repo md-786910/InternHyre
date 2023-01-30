@@ -12,11 +12,6 @@ function BlogIndex() {
           <BlogCard />
           <BlogCard />
         </div>
-
-        <div className="mt-5 d-flex justify-content-between">
-          <button className="btn btn-primary">prev</button>
-          <button className="btn btn-primary">next</button>
-        </div>
       </div>
     </>
   );
